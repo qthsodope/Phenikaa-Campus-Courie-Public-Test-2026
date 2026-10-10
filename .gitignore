@@ -1,0 +1,22 @@
+# .gitignore — bản nộp mã nguồn vòng Public Test (The Codeaholics)
+
+# Dữ liệu cuộc thi: thuộc BTC, BTC đã có
+delivery_public/
+sample_submission.json
+*.png
+*.jpg
+*.jpeg
+
+# Môi trường ảo, bộ nhớ đệm: tự sinh lại được
+.venv/
+__pycache__/
+*.pyc
+cache/
+
+# Kết quả chạy dự đoán, nhật ký
+submissions/
+logs/
+*.log
+
+# Mô hình ngôn ngữ khối 2 (~540 MB): file bản nộp đã mất (README, mục 2); học lại bằng scripts/train_nlp_model.py
+models/nlp_*.pt
