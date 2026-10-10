@@ -41,6 +41,10 @@ Thiếu `nlp_final.pt` thì `predict.py` vẫn chạy, khi đó khối câu ch�
 ```
 1.200 cảnh khoảng 4 phút trên RTX 3060; kết quả tất định.
 
+`submissions/BEST.json` là file dự đoán nhóm đã nộp ở vòng public test (sha256
+`cb2521791000af083474a4db9aa804224a1277eb2e4b1f3680b5c6a41b54c43d`). Vì thiếu `nlp_final.pt` gốc (mục 2), chạy lại
+`predict.py` có thể cho kết quả lệch so với file này.
+
 ## 4. Huấn luyện lại từ đầu (seed 2026)
 
 ```bash
@@ -72,4 +76,5 @@ README.md  requirements.txt
 src/courier/   data.py graph.py pipeline.py splits.py | vision/ | nlp/ | policy/
 scripts/       predict.py | train_vision.py train_nlp_model.py build_nlp_vocab.py download_models.py
 models/        trọng số khối ảnh
+submissions/   BEST.json (file dự đoán đã nộp)
 ```
